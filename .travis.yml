@@ -26,4 +26,15 @@ deploy:
   strategy: git
   api_key:
     secure: DRfAAf9ydff/V4t8jW/iynsPB5n+4TM68GE47z2iPp4+dmGHgTHWxe4XFTVMfNeC6pmkDzXUZMkfaSlx8nmt7PeQeBUu4kLrAFa2Y/cem3zdu3IAD7ogqU34xakQI3hwfn3/Gy4fXWn7TIUYFc5utPKSFuh/jO4dS4d43jZbi+kqzkTJYZUtomYXgDlLCB0I9CmRE0LmCGYabusBdQgF3oL8r17tlkaWQjI6Z1RfbGQO2DSxCx9GoL+3Uh4BL+b7/DoOHM2oewG7ac8Hv2lPidM5nJBFksgDmBBBroq1P80dyLgv/yDV3oA9oyfzoNCJmWmPEM5zooU2CUHy/zW+xf1g0E2StIRWGchFTk8v0qOmcPgSgZrTYqlNFzjPt/V3sQjfqLrdlDtvjhrGPmZvooMypp4KOL4nnLULphbQjGCLcyEg+le3kwP3qRpFoYrMPT8S6/khDJ3smp41erIhJ7tQ6TfrMNSJKAeGBKmd0f/C8bPCBiSGFvyyZoVAjVdX/MQQXWFhKM6M5D8eE027e2ppYuH9MaPffATZKHfgpay4zGh7HJXXCXoAyGbQZgm5CXumsy9lUiFn0SPQwfKJw/p3iVOWVdo6M+w3SppxJQNVO/SlwV7r5qkRrKy3T+woXhJNbcHX58vz0plcgF5AhkqxetF0mbeiFSzNPdXbaj0=
- 
+  on:
+    branch: master 
+deploy:
+  - provider: heroku
+    app: emicolalc
+  - provider: heroku
+    app: emicolalc
+    strategy: git
+    api_key: 
+      secure: DRfAAf9ydff/V4t8jW/iynsPB5n+4TM68GE47z2iPp4+dmGHgTHWxe4XFTVMfNeC6pmkDzXUZMkfaSlx8nmt7PeQeBUu4kLrAFa2Y/cem3zdu3IAD7ogqU34xakQI3hwfn3/Gy4fXWn7TIUYFc5utPKSFuh/jO4dS4d43jZbi+kqzkTJYZUtomYXgDlLCB0I9CmRE0LmCGYabusBdQgF3oL8r17tlkaWQjI6Z1RfbGQO2DSxCx9GoL+3Uh4BL+b7/DoOHM2oewG7ac8Hv2lPidM5nJBFksgDmBBBroq1P80dyLgv/yDV3oA9oyfzoNCJmWmPEM5zooU2CUHy/zW+xf1g0E2StIRWGchFTk8v0qOmcPgSgZrTYqlNFzjPt/V3sQjfqLrdlDtvjhrGPmZvooMypp4KOL4nnLULphbQjGCLcyEg+le3kwP3qRpFoYrMPT8S6/khDJ3smp41erIhJ7tQ6TfrMNSJKAeGBKmd0f/C8bPCBiSGFvyyZoVAjVdX/MQQXWFhKM6M5D8eE027e2ppYuH9MaPffATZKHfgpay4zGh7HJXXCXoAyGbQZgm5CXumsy9lUiFn0SPQwfKJw/p3iVOWVdo6M+w3SppxJQNVO/SlwV7r5qkRrKy3T+woXhJNbcHX58vz0plcgF5AhkqxetF0mbeiFSzNPdXbaj0=
+    on:
+      branch: experimental
